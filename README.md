@@ -149,7 +149,7 @@ For detailed installation, configuration, API details, and deployment instructio
 ![Main Interface Light Mode](https://drive.google.com/file/d/1dyks-R8Yp-lb6JLSpcXOIdIaUgKUSFkQ/view?usp=sharing)
 
 ### Main Interface (Dark Mode with Query and Result)
-![Main Interface Dark Mode](https://drive.google.com/file/d/1TSxSGn9UUK1xQ44qqwe0d_YSqS5rZFdG/view?usp=sharing)
+![Main Interface Dark Mode](![Screenshot from 2025-01-06 11-47-19](https://github.com/user-attachments/assets/be180df9-8d0a-483a-b3cb-9a3fae8167a3))
 
 
 ## Tech Stack  
