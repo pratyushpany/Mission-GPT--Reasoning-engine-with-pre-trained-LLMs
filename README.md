@@ -146,10 +146,10 @@ For detailed installation, configuration, API details, and deployment instructio
 ![Registration Page](https://drive.google.com/uc?export=view&id=1mQ6T2EuQcGmCz1wC77_Vb8hYLH1Igas-)
 
 ### Main Interface (Light Mode)
-![Main Interface Light Mode](https://drive.google.com/uc?export=view&id=1rm6RtxMHIFNQQsZYfgVCAYdHb06SxAko)
+![Main Interface Light Mode](https://drive.google.com/file/d/1dyks-R8Yp-lb6JLSpcXOIdIaUgKUSFkQ/view?usp=sharing)
 
 ### Main Interface (Dark Mode with Query and Result)
-![Main Interface Dark Mode](https://drive.google.com/uc?export=view&id=1Cq1BGlcq_oEnciSU9rbSosl1nFcKQf9C)
+![Main Interface Dark Mode](https://drive.google.com/file/d/1TSxSGn9UUK1xQ44qqwe0d_YSqS5rZFdG/view?usp=sharing)
 
 
 ## Tech Stack  
