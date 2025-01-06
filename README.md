@@ -1,5 +1,5 @@
 # Mission GPT  
-A **Mission Document Retrieval Solution** powered by **Private GPT**, customized and enhanced for efficient and secure data analysis.
+A **Mission Document Retrieval Solution**  customized and enhanced for efficient and secure data analysis.
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/zylon-ai/private-gpt/blob/main/LICENSE)  
 [![Python Version](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)  
@@ -38,6 +38,57 @@ This project is built upon the [Private GPT](https://github.com/zylon-ai/private
    - Tailored the solution specifically for ISRO’s MSSG department to assist in retrieving insights from mission documents with precision.
 
 ---
+# About PrivateGPT
+
+**PrivateGPT** is a production-ready AI project that enables you to ask questions about your documents using the power of Large Language Models (LLMs), even without an internet connection. It ensures 100% privacy, with no data leaving your execution environment at any point.
+
+The project provides an API offering all the required primitives to build private, context-aware AI applications. It follows and extends the OpenAI API standard, supporting both normal and streaming responses.
+
+### API Overview
+
+The API is divided into two logical blocks:
+
+1. **High-level API**:  
+   - **Ingestion of Documents**: Handles document parsing, splitting, metadata extraction, embedding generation, and storage.  
+   - **Chat & Completions using Context from Ingested Documents**: Abstracts the retrieval of context, prompt engineering, and response generation.
+
+2. **Low-level API**:  
+   - **Embeddings Generation**: Generates embeddings from text.  
+   - **Contextual Chunks Retrieval**: Given a query, returns the most relevant chunks of text from the ingested documents.
+
+In addition, a working **Gradio UI client** is provided to test the API. It includes useful tools such as a bulk model download script, ingestion script, and documents folder watch, etc.
+
+---
+
+### Motivation Behind PrivateGPT
+
+Generative AI is transformative, but industries like healthcare and legal are cautious about adopting AI tools due to privacy concerns. The risk of using third-party AI services that might not guarantee full data control is unacceptable for these sectors.
+
+PrivateGPT addresses these concerns by allowing the use of LLMs in an offline environment, ensuring privacy and control over the data. It is a solution designed for privacy-sensitive environments.
+
+---
+
+### Primordial Version
+
+The first version of PrivateGPT was launched in May 2023 as an educational tool to build fully local and private chatGPT-like solutions. This version quickly became a go-to solution for privacy-sensitive setups and laid the foundation for what PrivateGPT has become today.
+
+If you wish to continue experimenting with the original version, it is available in the **primordial branch** of the project.
+
+**Recommendation**: It is strongly advised to perform a clean clone and install of the latest version of PrivateGPT if you are transitioning from the primordial version.
+
+---
+
+### Present and Future of PrivateGPT
+
+PrivateGPT is continuously evolving to become a gateway for generative AI models and primitives. These include completions, document ingestion, RAG pipelines, and other low-level building blocks. Our goal is to make it easier for developers to build AI applications while providing a robust architecture for the community to contribute to.
+
+Stay tuned for updates and new features in upcoming releases.
+
+---
+
+For further details, visit the official [PrivateGPT GitHub Repository](https://github.com/zylon-ai/private-gpt).
+
+---
 
 ## Installation  
 
@@ -56,112 +107,68 @@ For a customized and pre-configured version tailored to ISRO-specific requiremen
    ```bash  
    git clone https://github.com/pratyushpany/MISSION-GPT.git  
    cd MISSION-GPT  
-Set Up the Environment:
+   ```  
 
-bash
-Copy code
-python3 -m venv env  
-source env/bin/activate  # For Linux/Mac  
-env\Scripts\activate     # For Windows  
-pip install -r requirements.txt  
-Ingest Documents:
-Add your mission-related documents to the designated folder and run:
+2. **Set Up the Environment:**  
+   ```bash  
+   python3 -m venv env  
+   source env/bin/activate  # For Linux/Mac  
+   env\Scripts\activate     # For Windows  
+   pip install -r requirements.txt  
+   ```  
 
-bash
-Copy code
-python ingest.py  
-Run the Application:
+3. **Ingest Documents:**  
+   Add your mission-related documents to the designated folder and run:  
+   ```bash  
+   python ingest.py  
+   ```  
 
-bash
-Copy code
-python app.py  
-Access the application at http://127.0.0.1:5000 in your browser.
+4. **Run the Application:**  
+   ```bash  
+   python app.py  
+   ```  
+   Access the application at `http://127.0.0.1:5000` in your browser.
 
-Documentation
-For detailed installation, configuration, API details, and deployment instructions, refer to the Private GPT Documentation.
+---
 
-Screenshots
-Login and Registration System:
-Login Interface:
-Registration Interface:
-ISRO-Themed Interface (Light Mode):
-Application in Light Mode:
-Final Interface in Dark Mode with Query Results:
-Dark Mode Interface with Query Results:
-PrivateGPT Overview
-PrivateGPT is a production-ready AI project that enables you to ask questions about your documents using the power of Large Language Models (LLMs), even in environments without an Internet connection. The key advantage is that it is 100% private — no data leaves your execution environment at any point.
+## Documentation  
+For detailed installation, configuration, API details, and deployment instructions, refer to the [Private GPT Documentation](https://docs.privategpt.dev/).  
 
-The project provides an API that offers all the primitives required to build private, context-aware AI applications. It follows and extends the OpenAI API standard and supports both normal and streaming responses.
+---
 
-API Overview
-PrivateGPT provides a high-level API and a low-level API to cater to both basic and advanced users:
+## Screenshots  
+## Images of the Application
 
-High-Level API:
+### Login Page (Built using Flask)
+![Login Page](https://drive.google.com/uc?export=view&id=1i5A74kysw8VK6LGhRaxCn0w_Bcx_50vF)
 
-Document Ingestion: Handles document parsing, splitting, metadata extraction, embedding generation, and storage internally.
-Chat & Completions: Enables context-based querying using ingested documents, abstracting retrieval, prompt engineering, and response generation.
-Low-Level API:
+### Registration Page (Built using Flask)
+![Registration Page](https://drive.google.com/uc?export=view&id=1mQ6T2EuQcGmCz1wC77_Vb8hYLH1Igas-)
 
-Embeddings Generation: Generates embeddings based on text input.
-Contextual Chunks Retrieval: Returns the most relevant chunks of text from ingested documents based on a given query.
-Additionally, Gradio UI is provided to easily test the API, along with useful tools like:
+### Main Interface (Light Mode)
+![Main Interface Light Mode](https://drive.google.com/uc?export=view&id=1rm6RtxMHIFNQQsZYfgVCAYdHb06SxAko)
 
-Bulk model download script
-Ingestion script
-Documents folder watch, etc.
-Motivation Behind PrivateGPT
-Generative AI is transforming industries, but concerns around privacy, especially in data-sensitive domains like healthcare and legal, limit its adoption. PrivateGPT was created to address these privacy concerns by enabling local, offline usage of Large Language Models, ensuring that data remains fully under your control. This project empowers developers to create privacy-focused AI applications without the risk of exposing sensitive information.
-
-The Primordial Version
-The first version of PrivateGPT was released in May 2023 as a simpler implementation designed to be a foundation for privacy-sensitive generative AI projects. While it quickly became a popular solution, it has now evolved into a more comprehensive and feature-rich version.
-
-For those interested in experimenting with the primordial version, it is available in the primordial branch.
-
-Note: If you are coming from the primordial version, it's highly recommended to do a clean clone and installation of this new version.
-
-Present and Future of PrivateGPT
-PrivateGPT is continuing to evolve, with plans to expand its capabilities to include:
-
-Gateway to generative AI models and primitives.
-Enhanced completion capabilities.
-More powerful RAG pipelines.
-Additional low-level building blocks.
-Stay tuned for new releases to discover all the exciting features and changes as the project progresses.
-
-For further details, visit the PrivateGPT GitHub repository.
-
-Tech Stack
-Languages: Python
-Frameworks: Flask, Gradio
-Models Used: Mistral 7B, Ollama
-Methodologies: Retrieval-Augmented Generation (RAG)
-Acknowledgments
-Special thanks to the developers of Private GPT, the backbone of this project. Their innovative framework laid the foundation for building Mission GPT, enabling its advanced functionalities and seamless performance.
-
-Additionally, I extend my gratitude to the MSSG Department, ISRO, for providing me with the opportunity to customize and enhance this framework for mission-critical use cases.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-markdown
-Copy code
-
-### Summary of Changes:
-1. **PrivateGPT Overview**: Added a section detailing the purpose, features, and evolution of **PrivateGPT**.
-2. **Motivation and Future**: Included explanations for the motivation behind **PrivateGPT** and its current and future capabilities.
-3. **Screenshots**: Included the screenshots you shared for the login system, registration, and the ISRO-themed interface in both light and dark modes.
-4. **Link to GitHub**: Added the link to the **PrivateGPT** GitHub repository for further exploration.
-
-Let me know if you'd like any more adjustments!
+### Main Interface (Dark Mode with Query and Result)
+![Main Interface Dark Mode](https://drive.google.com/uc?export=view&id=1Cq1BGlcq_oEnciSU9rbSosl1nFcKQf9C)
 
 
+## Tech Stack  
 
+- **Languages:** Python  
+- **Frameworks:** Flask, Gradio  
+- **Models Used:** Mistral 7B, Ollama  
+- **Methodologies:** Retrieval-Augmented Generation (RAG)  
 
+---
 
+## Acknowledgments  
 
+Special thanks to the developers of [Private GPT](https://github.com/zylon-ai/private-gpt), the backbone of this project. Their innovative framework laid the foundation for building Mission GPT, enabling its advanced functionalities and seamless performance.  
 
+Additionally, I extend my gratitude to the **MSSG Department, ISRO**, for providing me with the opportunity to customize and enhance this framework for mission-critical use cases.  
 
+---
 
+## License  
 
-
-
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/zylon-ai/private-gpt/blob/main/LICENSE) file for details.
