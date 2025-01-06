@@ -140,16 +140,17 @@ For detailed installation, configuration, API details, and deployment instructio
 ## Images of the Application
 
 ### Login Page (Built using Flask)
-![Login Page](https://drive.google.com/uc?export=view&id=1i5A74kysw8VK6LGhRaxCn0w_Bcx_50vF)
+[a3](https://github.com/user-attachments/assets/1b781f6a-e8e2-49f6-b537-02dd93dc46de)
 
 ### Registration Page (Built using Flask)
-![Registration Page](https://drive.google.com/uc?export=view&id=1mQ6T2EuQcGmCz1wC77_Vb8hYLH1Igas-)
+![a3](https://github.com/user-attachments/assets/1b781f6a-e8e2-49f6-b537-02dd93dc46de)
 
 ### Main Interface (Light Mode)
-![Main Interface Light Mode](https://drive.google.com/file/d/1dyks-R8Yp-lb6JLSpcXOIdIaUgKUSFkQ/view?usp=sharing)
+[Screenshot from 2024-06-09 22-00-57 (1)](https://github.com/user-attachments/assets/bc95d3af-90df-4646-871b-f7633db3ea99)
+
 
 ### Main Interface (Dark Mode with Query and Result)
-![Main Interface Dark Mode](![Screenshot from 2025-01-06 11-47-19](https://github.com/user-attachments/assets/be180df9-8d0a-483a-b3cb-9a3fae8167a3))
+[Screenshot from 2025-01-06 11-47-19](https://github.com/user-attachments/assets/be180df9-8d0a-483a-b3cb-9a3fae8167a3))
 
 
 ## Tech Stack  
